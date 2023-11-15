@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+**/.vs*
 */.vs
 *.vsidx
 /.vs/cs2-internal/v17/.suo
@@ -49,3 +50,4 @@
 *.idb
 *.iobj
 /.vs/cs2-internal/v17/Browse.VC.db
+/output/intermediates/*
