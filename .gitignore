@@ -348,3 +348,56 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.dll
+*.out
+*.app
+.vs/cs2-internal/FileContentIndex/30d66172-9770-4dc6-be1c-2ecff57ac4c8.vsidx
+*.vsidx
+.vs/cs2-internal/v17/.suo
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.ipch
+*.pdb
+*.recipe
+*.ilk
+*.log
+*.tlog
+*.json
+*.command
+*.idb
+*.iobj
+*.ipdb
+.vs/cs2-internal/v16/.suo
