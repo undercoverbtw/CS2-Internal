@@ -142,9 +142,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\utility\memory.cpp" />
+    <ClCompile Include="source\utility\porn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dependencies\xorstr.h" />
+    <ClInclude Include="source\utility\adress.h" />
+    <ClInclude Include="source\utility\memory.h" />
+    <ClInclude Include="source\utility\porn.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
