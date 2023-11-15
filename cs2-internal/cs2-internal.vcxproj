@@ -27,10 +27,10 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -82,15 +82,20 @@
     <TargetName>internal</TargetName>
     <IncludePath>$(SolutionDir)cs2-internal\dependencies;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <IntDir>$(SolutionDir)output\intermediates\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -141,15 +146,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\game\game.cpp" />
+    <ClCompile Include="source\game\interfaces.cpp" />
+    <ClCompile Include="source\game\schemas.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\utility\memory.cpp" />
     <ClCompile Include="source\utility\porn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dependencies\xorstr.h" />
-    <ClInclude Include="source\utility\adress.h" />
+    <ClInclude Include="source\game\game.h" />
+    <ClInclude Include="source\game\interfaces.h" />
+    <ClInclude Include="source\game\schemas.h" />
+    <ClInclude Include="source\game\sdk\sdk.h" />
+    <ClInclude Include="source\utility\types\adress.h" />
     <ClInclude Include="source\utility\memory.h" />
     <ClInclude Include="source\utility\porn.h" />
+    <ClInclude Include="source\utility\types\fnv1a.h" />
+    <ClInclude Include="source\utility\types\virtual.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

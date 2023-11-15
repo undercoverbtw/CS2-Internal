@@ -401,3 +401,4 @@ FodyWeavers.xsd
 *.iobj
 *.ipdb
 .vs/cs2-internal/v16/.suo
+cs2-internal/source/utility/adress.h

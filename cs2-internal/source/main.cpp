@@ -1,27 +1,29 @@
 #include <thread>
 #include <Windows.h>
+#include "game/interfaces.h"
+#include <consoleapi.h>
+#include <spdlog/spdlog.h>
 
 unsigned long __stdcall init(void* pm)
 {
 #pragma region debuglogs
 #ifdef _DEBUG
-
 	// debug console with logs will come in next update
 	// debug logs are very importmant and really useful for debugging crashes and where we crash without having to attach a debugger
-
-#endif // _DEBUG
+#endif // debug
 #pragma endregion debuglogs
-
+	
 
 #pragma region initialization
 	do {
-
+		
 		// if (!hooks::setup())
 		//      break;
 		// 
-		// if (!interfaces::setup())
-		//      break;
 
+		if (!interfaces::setup())
+			break;
+		
 		// unloading cheat when pressing END key
 		// if we have not clicked the thread will sleep until unload button preseed
 
@@ -49,8 +51,7 @@ unsigned long __stdcall init(void* pm)
 #endif // debug
 
 	// lastly we need to exit our thread that we opened in DLLmain
-	FreeLibraryAndExitThread(static_cast<HMODULE>(pm), EXIT_SUCCESS);
-
+	FreeLibraryAndExitThread(static_cast<HMODULE>(pm), 0);
 #pragma endregion unload
 }
 
