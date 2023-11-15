@@ -136,7 +136,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -158,6 +158,32 @@
     <ClInclude Include="source\game\game.h" />
     <ClInclude Include="source\game\interfaces.h" />
     <ClInclude Include="source\game\schemas.h" />
+    <ClInclude Include="source\game\sdk\interfaces\client_mode_shared.h" />
+    <ClInclude Include="source\game\sdk\interfaces\csgo_input.h" />
+    <ClInclude Include="source\game\sdk\interfaces\cvar.h" />
+    <ClInclude Include="source\game\sdk\interfaces\engine_client.h" />
+    <ClInclude Include="source\game\sdk\interfaces\game_entity_system.h" />
+    <ClInclude Include="source\game\sdk\interfaces\game_resource_service.h" />
+    <ClInclude Include="source\game\sdk\interfaces\global_vars.h" />
+    <ClInclude Include="source\game\sdk\interfaces\localize.h" />
+    <ClInclude Include="source\game\sdk\interfaces\resource_system.h" />
+    <ClInclude Include="source\game\sdk\interfaces\schema_system.h" />
+    <ClInclude Include="source\game\sdk\interfaces\source_2_client.h" />
+    <ClInclude Include="source\game\sdk\misc\base_anim_graph.h" />
+    <ClInclude Include="source\game\sdk\misc\base_combat_character.h" />
+    <ClInclude Include="source\game\sdk\misc\base_entity.h" />
+    <ClInclude Include="source\game\sdk\misc\base_flex.h" />
+    <ClInclude Include="source\game\sdk\misc\base_model_entity.h" />
+    <ClInclude Include="source\game\sdk\misc\base_player_pawn.h" />
+    <ClInclude Include="source\game\sdk\misc\base_user_cmd_pb.h" />
+    <ClInclude Include="source\game\sdk\misc\cs_player_controller.h" />
+    <ClInclude Include="source\game\sdk\misc\cs_player_pawn.h" />
+    <ClInclude Include="source\game\sdk\misc\cs_player_pawn_base.h" />
+    <ClInclude Include="source\game\sdk\misc\enums.h" />
+    <ClInclude Include="source\game\sdk\misc\user_cmd.h" />
+    <ClInclude Include="source\game\sdk\misc\utl_string.h" />
+    <ClInclude Include="source\game\sdk\misc\utl_ts_hash.h" />
+    <ClInclude Include="source\game\sdk\misc\utl_vector.h" />
     <ClInclude Include="source\game\sdk\sdk.h" />
     <ClInclude Include="source\utility\types\adress.h" />
     <ClInclude Include="source\utility\memory.h" />

@@ -65,5 +65,83 @@
     <ClInclude Include="source\utility\types\virtual.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_anim_graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_combat_character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_flex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_model_entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_player_pawn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\base_user_cmd_pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\cs_player_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\cs_player_pawn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\cs_player_pawn_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\user_cmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\utl_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\utl_ts_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\misc\utl_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\client_mode_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\csgo_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\cvar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\engine_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\game_entity_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\game_resource_service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\global_vars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\localize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\resource_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\schema_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\sdk\interfaces\source_2_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

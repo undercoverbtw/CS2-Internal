@@ -2,7 +2,7 @@
 #include "sdk/sdk.h"
 
 namespace interfaces {
-    bool setup();
+    bool initialize();
 
     void* get_interface_impl(fnv1a::Hash hash);
 
