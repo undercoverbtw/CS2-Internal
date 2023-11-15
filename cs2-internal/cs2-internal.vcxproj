@@ -72,13 +72,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)output\</OutDir>
-    <IntDir>$(SolutionDir)output\intermediates</IntDir>
+    <IntDir>$(SolutionDir)output\intermediates\</IntDir>
     <TargetName>debug-internal</TargetName>
     <IncludePath>$(SolutionDir)cs2-internal\dependencies;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)output\</OutDir>
-    <IntDir>$(SolutionDir)output\intermediates</IntDir>
+    <IntDir>$(SolutionDir)output\intermediates\</IntDir>
     <TargetName>internal</TargetName>
     <IncludePath>$(SolutionDir)cs2-internal\dependencies;$(IncludePath)</IncludePath>
   </PropertyGroup>
@@ -119,7 +119,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
